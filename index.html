@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY FITNESS – Premium Fitness Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">MY FITNESS</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="services.html#strength">Strength Training</a></li>
+          <li><a href="services.html#bodybuilding">Body Building</a></li>
+          <li><a href="services.html#yoga">Basic Yoga</a></li>
+          <li><a href="services.html#cardio">Cardio Exercise</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80" alt="Gym" class="hero-img" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text fade-up">
+      <h1 class="hero-title">MY FITNESS</h1>
+      <h2 class="hero-subtitle">We Are The Best Fitness<br/>Studio In Town</h2>
+      <p class="hero-desc">We have almost 15+ years of experiences to helping consulting services and give business solution</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary shine-btn">Make Appointment</a>
+        <a href="#" class="btn btn-outline">
+          <span class="play-icon">▶</span> Watch Video Profile
+        </a>
+      </div>
+    </div>
+    <div class="hero-slider-controls">
+      <button class="slider-btn prev-btn">&#8592;</button>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="slider-btn next-btn">&#8594;</button>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll Down</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== TICKER STRIP ===== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>✦ BEGINNER FRIENDLY</span>
+    <span>✦ LIVE CONSULTANCY</span>
+    <span>✦ 50+ TRAINED COACH</span>
+    <span>✦ WORKOUT PROGRAM</span>
+    <span>✦ BEGINNER FRIENDLY</span>
+    <span>✦ LIVE CONSULTANCY</span>
+    <span>✦ 50+ TRAINED COACH</span>
+    <span>✦ WORKOUT PROGRAM</span>
+    <span>✦ BEGINNER FRIENDLY</span>
+    <span>✦ LIVE CONSULTANCY</span>
+  </div>
+</div>
+
+<!-- ===== ABOUT TEASER ===== -->
+<section class="about-teaser section-pad">
+  <div class="container">
+    <div class="about-teaser-grid">
+      <div class="about-left fade-up">
+        <h2 class="section-heading">We Provide The <span class="accent">Best Facilities</span> &amp; <span class="accent">Training</span> Solution</h2>
+      </div>
+      <div class="about-right fade-up delay-1">
+        <p>We provide the best program for you, for your health and beauty from outside and inside. We provide the best gym &amp; fitness facilities for you.</p>
+        <a href="about.html" class="link-arrow">SEE MORE ABOUT US ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services section-pad" id="services">
+  <div class="container">
+    <div class="section-label fade-up">OUR SERVICES</div>
+    <h2 class="section-title center fade-up">PROGRAMS YOU'LL GET</h2>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4v16M18 4v16M2 8h4M18 8h4M2 16h4M18 16h4"/></svg>
+        </div>
+        <h3>Strength Training</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+      </div>
+      <div class="service-card active fade-up delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 4v16M18 4v16M2 8h4M18 8h4"/></svg>
+        </div>
+        <h3>Body Building</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+      </div>
+      <div class="service-card fade-up delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-1.5 3-4 5-4 8a4 4 0 008 0c0-3-2.5-5-4-8z"/><path d="M12 15v6M9 18h6"/></svg>
+        </div>
+        <h3>Basic Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+      </div>
+    </div>
+    <div class="center-btn fade-up">
+      <a href="services.html" class="btn btn-primary">See All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="why-us section-pad" id="why-us">
+  <div class="container">
+    <div class="why-us-grid">
+      <div class="why-left fade-up">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80" alt="Trainer" />
+      </div>
+      <div class="why-right">
+        <h2 class="section-heading fade-up">WHY <span class="accent">CHOOSE US</span>?</h2>
+        <p class="fade-up delay-1">We provide the best program for you, for your health and beauty from outside and inside. We provide the best gym &amp; fitness facilities for you. Our skilled personnel to Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="why-features">
+          <div class="why-item fade-up delay-1">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Supportive Trainers</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod ligula.</p>
+            </div>
+          </div>
+          <div class="why-item fade-up delay-2">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>25+ Years Experiences</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod ligula.</p>
+            </div>
+          </div>
+          <div class="why-item fade-up delay-3">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Complete Facilities</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod ligula.</p>
+            </div>
+          </div>
+          <div class="why-item fade-up delay-3">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Personal Training Services</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod ligula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS / PROGRESS ===== -->
+<section class="achievements section-pad">
+  <div class="container">
+    <div class="achievements-grid">
+      <div class="achievements-left fade-up">
+        <div class="section-label">OUR ACHIEVEMENT &amp; SKILLS VIEW</div>
+        <h2 class="section-heading">We Are Giving You The <br/><span class="accent">Best Training Ever</span></h2>
+        <p>We provide the best program for you, for your health and beauty from outside and inside. We provide the best gym</p>
+        <div class="progress-bars">
+          <div class="progress-item">
+            <div class="progress-label"><span>Body Building</span><span class="progress-num" data-target="90">0%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Yoga</span><span class="progress-num" data-target="82">0%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="82"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Cardio Exercise</span><span class="progress-num" data-target="85">0%</span></div>
+            <div class="progress-track"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary shine-btn" style="margin-top:2rem">Make Appointment</a>
+      </div>
+      <div class="stats-right fade-up delay-1">
+        <div class="stat-item">
+          <div class="stat-num" data-target="25">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Years Experiences</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="4000">0</div>
+          <div class="stat-plus">K+</div>
+          <div class="stat-label">Satisfied Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="150">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Awards Winner</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="50">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Expert Trainers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials section-pad">
+  <div class="container">
+    <div class="section-label center fade-up">OUR ACHIEVEMENT</div>
+    <h2 class="section-title center fade-up">WHAT PEOPLE SAY</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"Amazing gym with world-class facilities. The trainers are incredibly supportive and helped me achieve my fitness goals faster than I ever thought possible."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80" alt="Client" />
+          <div>
+            <strong>James Wilson</strong>
+            <span>Regular Member</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up delay-1">
+        <div class="stars">★★★★★</div>
+        <p>"My Fitness transformed my life. Lost 30 pounds in 4 months with the personalized training program. The environment is motivating and the community is fantastic."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&q=80" alt="Client" />
+          <div>
+            <strong>Sarah Johnson</strong>
+            <span>Premium Member</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up delay-2">
+        <div class="stars">★★★★★</div>
+        <p>"Best investment I've ever made. Professional trainers, cutting-edge equipment, and a welcoming atmosphere. Highly recommend to anyone serious about fitness."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&q=80" alt="Client" />
+          <div>
+            <strong>Michael Chen</strong>
+            <span>VIP Member</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="cta-bg">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80" alt="CTA" />
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="container cta-content fade-up">
+    <h2>READY TO TRANSFORM <span class="accent">YOUR BODY</span>?</h2>
+    <p>Join thousands of members who already changed their lives with MY FITNESS</p>
+    <a href="contact.html" class="btn btn-primary shine-btn">START TODAY</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">MY FITNESS</div>
+        <p>We provide the best program for you, for your health and beauty from outside and inside.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Strength Training</a></li>
+          <li><a href="#">Body Building</a></li>
+          <li><a href="#">Basic Yoga</a></li>
+          <li><a href="#">Cardio Exercise</a></li>
+          <li><a href="#">Weight Loss</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="contact-info">
+          <li>📍 123 Fitness Street, Gym City</li>
+          <li>📞 +1 (800) 123-4567</li>
+          <li>✉ umarhunais2023@gmail.com</li>
+          <li>🕐 Mon–Fri: 6AM – 10PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MY FITNESS. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

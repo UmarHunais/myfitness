@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – MY FITNESS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">MY FITNESS</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=1600&q=80" alt="Pricing" />
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="container">
+    <h1 class="fade-up">PRICING PLANS</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Pricing</div>
+  </div>
+</section>
+
+<section class="pricing-section section-pad">
+  <div class="container">
+    <div class="section-label center fade-up">MEMBERSHIP</div>
+    <h2 class="section-title center fade-up">CHOOSE YOUR <span class="accent">PLAN</span></h2>
+    <p class="center fade-up" style="color:var(--muted);max-width:540px;margin:0 auto 64px;font-size:15px;">Choose the plan that best fits your fitness goals. All plans include full gym access and basic classes.</p>
+
+    <div class="pricing-grid">
+      <!-- BASIC -->
+      <div class="pricing-card fade-up">
+        <h3>BASIC</h3>
+        <div class="price">
+          <span class="price-currency">$</span>
+          <span class="price-num">29</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>2 Group Classes/Week</li>
+          <li>Locker Room Access</li>
+          <li>Basic Fitness Assessment</li>
+          <li style="opacity:0.4">Personal Trainer Sessions</li>
+          <li style="opacity:0.4">Nutrition Guidance</li>
+          <li style="opacity:0.4">VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+
+      <!-- PRO (FEATURED) -->
+      <div class="pricing-card featured fade-up delay-1">
+        <div class="pricing-badge">MOST POPULAR</div>
+        <h3>PRO</h3>
+        <div class="price">
+          <span class="price-currency">$</span>
+          <span class="price-num">59</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker Room + Sauna</li>
+          <li>Advanced Fitness Assessment</li>
+          <li>4 Personal Trainer Sessions</li>
+          <li>Nutrition Guidance</li>
+          <li style="opacity:0.4">VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+
+      <!-- ELITE -->
+      <div class="pricing-card fade-up delay-2">
+        <h3>ELITE</h3>
+        <div class="price">
+          <span class="price-currency">$</span>
+          <span class="price-num">99</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker Room + Sauna + Pool</li>
+          <li>Elite Fitness Assessment</li>
+          <li>Unlimited Personal Training</li>
+          <li>Premium Nutrition Plan</li>
+          <li>VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-top:80px;">
+      <h2 class="section-title center fade-up">FREQUENTLY ASKED <span class="accent">QUESTIONS</span></h2>
+      <div class="faq-list fade-up" style="max-width:720px;margin:0 auto;">
+        <details class="faq-item">
+          <summary>Can I cancel my membership anytime?</summary>
+          <p>Yes, you can cancel your membership at any time with no cancellation fees. We believe in flexible memberships that work for your lifestyle.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is there a free trial available?</summary>
+          <p>Yes! We offer a 7-day free trial for new members. Come in and experience our world-class facilities before committing to a plan.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I upgrade or downgrade my plan?</summary>
+          <p>Absolutely. You can change your membership plan at any time. Changes take effect at the start of the next billing cycle.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are group classes included in all plans?</summary>
+          <p>Basic plan includes 2 classes per week. Pro and Elite plans include unlimited group classes including yoga, HIIT, spin, and more.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.faq-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item:hover { border-color: rgba(182,255,0,0.3); }
+.faq-item summary {
+  padding: 20px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--accent); font-size: 22px; font-weight: 300; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { padding: 0 24px 20px; color: var(--muted); font-size: 14px; }
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo">MY FITNESS</div><p>Premium fitness for everyone.</p><div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">tw</a><a href="#">yt</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Strength Training</a></li><li><a href="#">Body Building</a></li><li><a href="#">Basic Yoga</a></li><li><a href="#">Cardio Exercise</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Info</h4><ul class="contact-info"><li>📍 123 Fitness Street</li><li>📞 +1 (800) 123-4567</li><li>✉ umarhunais2023@gmail.com</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 MY FITNESS. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
