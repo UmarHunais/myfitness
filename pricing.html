@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing – MY FITNESS</title>
+  <meta name="description" content="Affordable gym membership plans in LKR. Choose from Basic, Pro, or Elite — monthly or yearly billing." />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -19,10 +20,11 @@
       <li><a href="pricing.html" class="active">Pricing</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
+<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-bg">
     <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=1600&q=80" alt="Pricing" />
@@ -34,29 +36,45 @@
   </div>
 </section>
 
+<!-- PRICING SECTION -->
 <section class="pricing-section section-pad">
   <div class="container">
     <div class="section-label center fade-up">MEMBERSHIP</div>
     <h2 class="section-title center fade-up">CHOOSE YOUR <span class="accent">PLAN</span></h2>
-    <p class="center fade-up" style="color:var(--muted);max-width:540px;margin:0 auto 64px;font-size:15px;">Choose the plan that best fits your fitness goals. All plans include full gym access and basic classes.</p>
+    <p class="center fade-up" style="color:var(--muted);max-width:560px;margin:0 auto 48px;font-size:15px;">
+      Flexible memberships in LKR to fit every goal. All plans include full gym access and locker room.
+    </p>
 
-    <div class="pricing-grid">
+    <!-- BILLING TOGGLE -->
+    <div class="billing-toggle-wrap fade-up">
+      <span class="toggle-label active-label" id="labelMonthly">Monthly</span>
+      <button class="billing-toggle" id="billingToggle" aria-label="Switch billing period" aria-pressed="false">
+        <span class="toggle-knob"></span>
+      </button>
+      <span class="toggle-label" id="labelYearly">
+        Yearly <span class="save-badge">SAVE 17%</span>
+      </span>
+    </div>
+
+    <!-- MONTHLY PLANS -->
+    <div class="pricing-grid" id="monthlyPlans">
+
       <!-- BASIC -->
       <div class="pricing-card fade-up">
         <h3>BASIC</h3>
         <div class="price">
-          <span class="price-currency">$</span>
-          <span class="price-num">29</span>
+          <span class="price-currency">LKR</span>
+          <span class="price-num">3,500</span>
           <span class="price-period">/mo</span>
         </div>
         <ul class="pricing-features">
           <li>Full Gym Access</li>
-          <li>2 Group Classes/Week</li>
+          <li>2 Group Classes / Week</li>
           <li>Locker Room Access</li>
           <li>Basic Fitness Assessment</li>
-          <li style="opacity:0.4">Personal Trainer Sessions</li>
-          <li style="opacity:0.4">Nutrition Guidance</li>
-          <li style="opacity:0.4">VIP Area Access</li>
+          <li class="feat-no">Personal Trainer Sessions</li>
+          <li class="feat-no">Nutrition Guidance</li>
+          <li class="feat-no">VIP Area Access</li>
         </ul>
         <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">GET STARTED</a>
       </div>
@@ -66,8 +84,8 @@
         <div class="pricing-badge">MOST POPULAR</div>
         <h3>PRO</h3>
         <div class="price">
-          <span class="price-currency">$</span>
-          <span class="price-num">59</span>
+          <span class="price-currency">LKR</span>
+          <span class="price-num">7,500</span>
           <span class="price-period">/mo</span>
         </div>
         <ul class="pricing-features">
@@ -77,7 +95,7 @@
           <li>Advanced Fitness Assessment</li>
           <li>4 Personal Trainer Sessions</li>
           <li>Nutrition Guidance</li>
-          <li style="opacity:0.4">VIP Area Access</li>
+          <li class="feat-no">VIP Area Access</li>
         </ul>
         <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
       </div>
@@ -86,8 +104,8 @@
       <div class="pricing-card fade-up delay-2">
         <h3>ELITE</h3>
         <div class="price">
-          <span class="price-currency">$</span>
-          <span class="price-num">99</span>
+          <span class="price-currency">LKR</span>
+          <span class="price-num">14,500</span>
           <span class="price-period">/mo</span>
         </div>
         <ul class="pricing-features">
@@ -101,7 +119,194 @@
         </ul>
         <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
       </div>
-    </div>
+    </div><!-- end #monthlyPlans -->
+
+    <!-- YEARLY PLANS (hidden by default) -->
+    <div class="pricing-grid" id="yearlyPlans" style="display:none;">
+
+      <!-- BASIC YEARLY -->
+      <div class="pricing-card fade-up">
+        <div class="yearly-savings">Save LKR 7,000/yr</div>
+        <h3>BASIC</h3>
+        <div class="price">
+          <span class="price-currency">LKR</span>
+          <span class="price-num">35,000</span>
+          <span class="price-period">/yr</span>
+        </div>
+        <p class="price-equiv">≈ LKR 2,917 / month</p>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>2 Group Classes / Week</li>
+          <li>Locker Room Access</li>
+          <li>Basic Fitness Assessment</li>
+          <li class="feat-no">Personal Trainer Sessions</li>
+          <li class="feat-no">Nutrition Guidance</li>
+          <li class="feat-no">VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+
+      <!-- PRO YEARLY (FEATURED) -->
+      <div class="pricing-card featured fade-up delay-1">
+        <div class="pricing-badge">MOST POPULAR</div>
+        <div class="yearly-savings dark">Save LKR 15,000/yr</div>
+        <h3>PRO</h3>
+        <div class="price">
+          <span class="price-currency">LKR</span>
+          <span class="price-num">75,000</span>
+          <span class="price-period">/yr</span>
+        </div>
+        <p class="price-equiv">≈ LKR 6,250 / month</p>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker Room + Sauna</li>
+          <li>Advanced Fitness Assessment</li>
+          <li>4 Personal Trainer Sessions</li>
+          <li>Nutrition Guidance</li>
+          <li class="feat-no">VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+
+      <!-- ELITE YEARLY -->
+      <div class="pricing-card fade-up delay-2">
+        <div class="yearly-savings">Save LKR 29,000/yr</div>
+        <h3>ELITE</h3>
+        <div class="price">
+          <span class="price-currency">LKR</span>
+          <span class="price-num">145,000</span>
+          <span class="price-period">/yr</span>
+        </div>
+        <p class="price-equiv">≈ LKR 12,083 / month</p>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker Room + Sauna + Pool</li>
+          <li>Elite Fitness Assessment</li>
+          <li>Unlimited Personal Training</li>
+          <li>Premium Nutrition Plan</li>
+          <li>VIP Area Access</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;">GET STARTED</a>
+      </div>
+    </div><!-- end #yearlyPlans -->
+
+    <!-- COMPARISON TABLE -->
+    <div class="comparison-section fade-up">
+      <div class="section-label center" style="margin-top:80px;">PLAN DETAILS</div>
+      <h2 class="section-title center">COMPARE <span class="accent">PLANS</span></h2>
+
+      <!-- Second toggle (syncs with top) -->
+      <div class="billing-toggle-wrap" style="margin-bottom:32px;">
+        <span class="toggle-label active-label" id="tblLabelMonthly">Monthly</span>
+        <button class="billing-toggle" id="billingToggle2" aria-label="Switch billing period" aria-pressed="false">
+          <span class="toggle-knob"></span>
+        </button>
+        <span class="toggle-label" id="tblLabelYearly">
+          Yearly <span class="save-badge">SAVE 17%</span>
+        </span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="feat-col">Feature</th>
+              <th>Basic<br/><span class="th-price" id="thBasicPrice">LKR 3,500/mo</span></th>
+              <th class="th-featured">Pro<br/><span class="th-price" id="thProPrice">LKR 7,500/mo</span></th>
+              <th>Elite<br/><span class="th-price" id="thElitePrice">LKR 14,500/mo</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feat-name">Full Gym Access</td>
+              <td><span class="check">✓</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Group Classes</td>
+              <td>2 / week</td>
+              <td class="td-featured">Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Locker Room</td>
+              <td><span class="check">✓</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Sauna Access</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feat-name">Pool Access</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="cross">✗</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Fitness Assessment</td>
+              <td>Basic</td>
+              <td class="td-featured">Advanced</td>
+              <td>Elite</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Personal Trainer</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured">4 sessions/mo</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Nutrition Guidance</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td>Premium Plan</td>
+            </tr>
+            <tr>
+              <td class="feat-name">VIP Area Access</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="cross">✗</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Guest Passes</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured">1 / month</td>
+              <td>3 / month</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Yoga &amp; HIIT Classes</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-alt">
+              <td class="feat-name">Spinning Classes</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="check">✓</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr>
+              <td class="feat-name">Priority Booking</td>
+              <td><span class="cross">✗</span></td>
+              <td class="td-featured"><span class="cross">✗</span></td>
+              <td><span class="check">✓</span></td>
+            </tr>
+            <tr class="row-cta">
+              <td></td>
+              <td><a href="contact.html" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Get Basic</a></td>
+              <td class="td-featured"><a href="contact.html" class="btn btn-primary shine-btn" style="font-size:12px;padding:10px 20px;background:#000;color:var(--accent);">Get Pro</a></td>
+              <td><a href="contact.html" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Get Elite</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- end comparison -->
 
     <!-- FAQ -->
     <div style="margin-top:80px;">
@@ -120,15 +325,183 @@
           <p>Absolutely. You can change your membership plan at any time. Changes take effect at the start of the next billing cycle.</p>
         </details>
         <details class="faq-item">
-          <summary>Are group classes included in all plans?</summary>
-          <p>Basic plan includes 2 classes per week. Pro and Elite plans include unlimited group classes including yoga, HIIT, spin, and more.</p>
+          <summary>Are all prices in Sri Lankan Rupees (LKR)?</summary>
+          <p>Yes, all prices listed are in Sri Lankan Rupees (LKR). We accept cash, card, and bank transfers. Yearly plans are billed once annually.</p>
         </details>
       </div>
     </div>
+
   </div>
 </section>
 
 <style>
+/* ---- Billing Toggle ---- */
+.billing-toggle-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+.toggle-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.toggle-label.active-label { color: var(--text); }
+.save-badge {
+  background: var(--accent);
+  color: #000;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+.billing-toggle {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  background: var(--bg3);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+  flex-shrink: 0;
+}
+.billing-toggle.yearly {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: var(--text);
+  border-radius: 50%;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.billing-toggle.yearly .toggle-knob {
+  transform: translateX(28px);
+  background: #000;
+}
+
+/* ---- Yearly savings tag ---- */
+.yearly-savings {
+  display: inline-block;
+  background: rgba(182,255,0,0.12);
+  border: 1px solid rgba(182,255,0,0.4);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.yearly-savings.dark {
+  background: rgba(0,0,0,0.2);
+  border-color: rgba(0,0,0,0.4);
+  color: #000;
+}
+.price-equiv {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: -24px;
+  margin-bottom: 24px;
+}
+.pricing-card.featured .price-equiv { color: rgba(0,0,0,0.6); }
+
+/* ---- Feature not included ---- */
+.pricing-features li.feat-no {
+  opacity: 0.35;
+}
+.pricing-features li.feat-no::before {
+  content: '✗';
+  color: var(--muted);
+}
+.pricing-card.featured .pricing-features li::before { color: #000; }
+
+/* ---- Comparison Table ---- */
+.comparison-section { margin-top: 0; }
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 0;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 600px;
+}
+.comparison-table thead tr {
+  background: var(--bg3);
+}
+.comparison-table th {
+  padding: 20px 24px;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--border);
+  border-right: 1px solid var(--border);
+  line-height: 1.3;
+}
+.comparison-table th:last-child { border-right: none; }
+.comparison-table th.feat-col {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 200px;
+}
+.th-featured {
+  background: var(--accent);
+  color: #000 !important;
+}
+.th-price {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  opacity: 0.75;
+}
+.comparison-table td {
+  padding: 16px 24px;
+  text-align: center;
+  color: var(--muted);
+  border-right: 1px solid var(--border);
+  transition: background 0.2s;
+}
+.comparison-table td:last-child { border-right: none; }
+.comparison-table td.feat-name {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 14px;
+}
+.comparison-table .row-alt td { background: rgba(255,255,255,0.02); }
+.comparison-table .row-cta td { padding: 24px; background: var(--bg3); }
+.comparison-table td.td-featured {
+  background: rgba(182,255,0,0.06);
+  color: var(--text);
+  font-weight: 600;
+}
+.comparison-table .row-alt td.td-featured { background: rgba(182,255,0,0.09); }
+.check { color: var(--accent); font-size: 18px; font-weight: 900; }
+.cross { color: rgba(255,255,255,0.2); font-size: 18px; }
+
+/* ---- FAQ ---- */
 .faq-item {
   background: var(--bg3);
   border: 1px solid var(--border);
@@ -153,19 +526,92 @@
 .faq-item summary::after { content: '+'; color: var(--accent); font-size: 22px; font-weight: 300; }
 .faq-item[open] summary::after { content: '−'; }
 .faq-item p { padding: 0 24px 20px; color: var(--muted); font-size: 14px; }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .comparison-table th,
+  .comparison-table td { padding: 14px 16px; }
+  .comparison-table th { font-size: 16px; }
+}
 </style>
 
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><div class="nav-logo">MY FITNESS</div><p>Premium fitness for everyone.</p><div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">tw</a><a href="#">yt</a></div></div>
+      <div class="footer-brand">
+        <div class="nav-logo">MY FITNESS</div>
+        <p>Premium fitness for everyone.</p>
+        <div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">tw</a><a href="#">yt</a></div>
+      </div>
       <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Strength Training</a></li><li><a href="#">Body Building</a></li><li><a href="#">Basic Yoga</a></li><li><a href="#">Cardio Exercise</a></li></ul></div>
-      <div class="footer-col"><h4>Contact Info</h4><ul class="contact-info"><li>📍 123 Fitness Street</li><li>📞 +1 (800) 123-4567</li><li>✉ umarhunais2023@gmail.com</li></ul></div>
+      <div class="footer-col"><h4>Contact Info</h4><ul class="contact-info"><li>📍 123 Fitness Street</li><li>📞 +94 77 123 4567</li><li>✉ umarhunais2023@gmail.com</li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2025 MY FITNESS. All Rights Reserved.</p></div>
   </div>
 </footer>
+
+<script>
+// Pricing data
+const PRICES = {
+  monthly: { basic: 'LKR 3,500/mo', pro: 'LKR 7,500/mo', elite: 'LKR 14,500/mo' },
+  yearly:  { basic: 'LKR 35,000/yr', pro: 'LKR 75,000/yr', elite: 'LKR 145,000/yr' }
+};
+
+const toggle1 = document.getElementById('billingToggle');
+const toggle2 = document.getElementById('billingToggle2');
+const monthly = document.getElementById('monthlyPlans');
+const yearly  = document.getElementById('yearlyPlans');
+// Top toggle labels
+const lblM = document.getElementById('labelMonthly');
+const lblY = document.getElementById('labelYearly');
+// Table toggle labels
+const tblLblM = document.getElementById('tblLabelMonthly');
+const tblLblY = document.getElementById('tblLabelYearly');
+// Table header price cells
+const thBasic = document.getElementById('thBasicPrice');
+const thPro   = document.getElementById('thProPrice');
+const thElite = document.getElementById('thElitePrice');
+
+let isYearly = false;
+
+function applyState() {
+  const key = isYearly ? 'yearly' : 'monthly';
+
+  // Toggle visuals - both buttons
+  [toggle1, toggle2].forEach(t => {
+    t.classList.toggle('yearly', isYearly);
+    t.setAttribute('aria-pressed', isYearly);
+  });
+
+  // Top toggle labels
+  lblM.classList.toggle('active-label', !isYearly);
+  lblY.classList.toggle('active-label', isYearly);
+
+  // Table toggle labels
+  tblLblM.classList.toggle('active-label', !isYearly);
+  tblLblY.classList.toggle('active-label', isYearly);
+
+  // Show/hide plan grids
+  monthly.style.display = isYearly ? 'none' : 'grid';
+  yearly.style.display  = isYearly ? 'grid' : 'none';
+
+  // Update table header prices
+  thBasic.textContent = PRICES[key].basic;
+  thPro.textContent   = PRICES[key].pro;
+  thElite.textContent = PRICES[key].elite;
+
+  // Re-trigger fade-up on newly visible cards
+  const gridId = isYearly ? 'yearlyPlans' : 'monthlyPlans';
+  document.querySelectorAll('#' + gridId + ' .fade-up').forEach(el => {
+    el.classList.remove('visible');
+    requestAnimationFrame(() => setTimeout(() => el.classList.add('visible'), 80));
+  });
+}
+
+toggle1.addEventListener('click', () => { isYearly = !isYearly; applyState(); });
+toggle2.addEventListener('click', () => { isYearly = !isYearly; applyState(); });
+</script>
 
 <script src="js/main.js"></script>
 </body>
